@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="runtime">
+    <id>org.gtk.Gtk3theme.Communitheme</id>
+    <metadata_license>CC0-1.0</metadata_license>
+    <name>Communitheme Gtk Theme</name>
+    <summary>Communitheme theme</summary>
+    <description>
+        <p>Communitheme theme</p>
+    </description>
+    <url type="homepage">https://github.com/ubuntu/gtk-communitheme</url>
+</component>
