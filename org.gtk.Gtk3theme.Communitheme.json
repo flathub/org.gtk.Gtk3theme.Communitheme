@@ -57,7 +57,7 @@
         {
           "type": "git",
           "url": "https://github.com/ubuntu/gtk-communitheme.git",
-          "commit": "abd3c8ba7b5035dbf02e257f966300c6ccbe2c60"
+          "commit": "38aa28793bfaf94629d562949e89719919032a94"
         }
       ]
     },
