@@ -1,5 +1,5 @@
 {
-  "id": "org.gtk.Gtk3theme.Communitheme",
+  "id": "org.gtk.Gtk3theme.Yaru",
   "branch": "3.22",
   "runtime": "org.freedesktop.Sdk",
   "runtime-version": "1.6",
@@ -8,12 +8,12 @@
   "appstream-compose": false,
   "separate-locales": false,
   "build-options": {
-    "prefix": "/usr/share/runtime/share/themes/Communitheme/gtk-3.0"
+    "prefix": "/usr/share/runtime/share/themes/Yaru/gtk-3.0"
   },
   "modules": [
     {
       "name": "sassc",
-      "config-opts": ["--with-libsass=/usr/share/runtime/share/themes/Communitheme/gtk-3.0"],
+      "config-opts": ["--with-libsass=/usr/share/runtime/share/themes/Yaru/gtk-3.0"],
       "cleanup": ["*"],
       "sources": [
         {
@@ -47,16 +47,16 @@
       ]
     },
     {
-      "name": "Communitheme",
+      "name": "Yaru",
       "buildsystem": "meson",
       "build-options": {
         "prefix": "/usr/share/runtime",
-        "append-path": "/usr/share/runtime/share/themes/Communitheme/gtk-3.0/bin"
+        "append-path": "/usr/share/runtime/share/themes/Yaru/gtk-3.0/bin"
       },
       "sources": [
         {
           "type": "git",
-          "url": "https://github.com/ubuntu/gtk-communitheme.git",
+          "url": "https://github.com/ubuntu/yaru.git",
           "commit": "38aa28793bfaf94629d562949e89719919032a94"
         }
       ]
@@ -66,7 +66,7 @@
       "buildsystem": "simple",
       "build-commands": [
         "install -Dm644 org.gtk.Gtk3theme.Communitheme.appdata.xml ${FLATPAK_DEST}/share/appdata/org.gtk.Gtk3theme.Communitheme.appdata.xml",
-        "appstream-compose --basename=org.gtk.Gtk3theme.Communitheme --prefix=${FLATPAK_DEST} --origin=flatpak org.gtk.Gtk3theme.Communitheme"
+        "appstream-compose --basename=org.gtk.Gtk3theme.Yaru --prefix=${FLATPAK_DEST} --origin=flatpak org.gtk.Gtk3theme.Yaru"
       ],
       "sources": [
         {
